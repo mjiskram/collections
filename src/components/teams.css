@@ -1,0 +1,76 @@
+.agent-search .list-group-item {
+  transition: background-color 0.2s;
+}
+.agent-search .list-group-item:hover {
+  background-color: #e9f7ff;
+  cursor: pointer;
+}
+/* style every team card within a supervisor card */
+.supervisor-card .team-card {
+
+  font-size: 10pt;
+  background-color: #ffffff;        /* white background */
+  border: 1px solid #dee2e6;        /* light gray border */
+  border-radius: 8px;               /* rounded corners */
+  padding: 12px;                    /* inner spacing */
+  margin-bottom: 0;              /* space between team cards */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: background-color .2s, box-shadow .2s;
+}
+
+/* subtle hover effect */
+.supervisor-card .team-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* style the team title (assuming you have a header div inside TeamCard) */
+.supervisor-card .team-card .team-title {
+  
+  font-weight: 600;
+  color: #0066cb;
+  margin-bottom: 0px;
+}
+
+/* shrink the footer buttons on small screens */
+.supervisor-card .team-card .btn {
+  font-size: 0.85rem;
+}
+
+/* if you want to adjust list‐group items inside those cards */
+.supervisor-card .team-card .list-group-item {
+  padding: 0 0;
+  border: none;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.supervisor-card .team-card .list-group-item:last-child {
+  border-bottom: none;
+}
+/* style the entire agent list container */
+
+
+
+.team-card {
+  border: 5px solid #ffff33;
+}
+
+.team-card .list-group {
+  /* remove the default border if you like: */
+  border: none;
+  /* shrink the gap between items */
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+}
+
+/* style each agent entry */
+.team-card .list-group-item {
+  font-family: inherit;      /* match your teams container font */
+  font-size: 10pt;        /* inherit the base size you set */
+  color: inherit;            /* same text color */
+  padding: 0;
+}
+
+/* remove extra gap on the last item */
+.team-card .list-group-item:last-child {
+  margin-bottom: 0;
+}

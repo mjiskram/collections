@@ -1,0 +1,16 @@
+/* src/index.css */
+:root {
+  /* adjust these to whatever you prefer */
+  --global-font-family: Arial, sans-serif;
+  --global-font-size: 16px;
+  --global-line-height: 1.5;
+}
+
+/* apply to absolutely everything */
+*,
+*::before,
+*::after {
+  font-family: var(--global-font-family) !important;
+  font-size: var(--global-font-size) !important;
+  line-height: var(--global-line-height) !important;
+}

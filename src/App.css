@@ -1,0 +1,51 @@
+legend.group-border {
+  width: inherit;
+  /* Or auto */
+  padding: 0 10px;
+  /* To give a bit of padding on the left and right */
+  border-bottom: none;
+}
+fieldset.group-border {
+  padding: 1.4em 1.4em 0 1.4em !important;
+  margin: 0 0 1em 0 !important;
+}
+
+.table {
+  table-layout: fixed;  /* keep your fixed-width columns */
+}
+
+.table th,
+.table td {
+  white-space: nowrap;      /* don’t wrap text to next line */
+  overflow: hidden;         /* clip any overflow */
+  text-overflow: ellipsis;  /* show “…” when clipped */
+}
+
+/* Hide buttons in any .team-card list items until hover */
+.team-card .list-group-item .btn {
+  visibility: hidden;
+}
+
+.team-card .list-group-item:hover .btn {
+  visibility: visible;
+}
+
+/* src/index.css */
+/* hide only the dragged item */
+.draggable-item[aria-grabbed="true"] {
+  visibility: hidden;
+}
+
+/* style the drag overlay under the cursor */
+.drag-overlay {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+
+.supervisor-card {
+  border: 2px solid #4A90E2;  /* change to any color you like */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
